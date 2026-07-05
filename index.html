@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlayCrescer - Um Toque de Magia Vintage</title>
+    <style>
+        *, *::before, *::after {
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #fcf8f2;
+            color: #4a3e3d;
+            margin: 0;
+            padding: 0;
+            display: block;
+            text-align: center;
+        }
+
+        header {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #8fa89b;
+            width: 100%;
+            border-bottom: 4px solid #7a9386;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+            color: #fcf8f2;
+            font-style: italic;
+            font-weight: normal;
+        }
+
+        header p {
+            margin: 15px 0 0 0;
+            color: #e6dfd3;
+            font-size: 1.2rem;
+            font-style: italic;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 50px auto;
+            padding: 0 20px;
+            display: table;
+            width: 100%;
+        }
+
+        .card-wrapper {
+            display: table-cell;
+            width: 33.33%;
+            padding: 0 15px;
+            vertical-align: top;
+        }
+
+        .card {
+            background: #ffffff;
+            border: 2px solid #e6dfd3;
+            border-radius: 12px;
+            padding: 30px 20px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.02);
+            cursor: pointer;
+            height: 100%;
+            min-height: 280px;
+        }
+
+        .card:hover {
+            border-color: #8fa89b;
+            background-color: #faf6f0;
+        }
+
+        .card .icon {
+            font-size: 3.5rem;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .card h2 {
+            font-size: 1.6rem;
+            color: #705349;
+            margin: 10px 0;
+            font-weight: normal;
+        }
+
+        .card p {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #6b5b52;
+            margin: 0;
+        }
+
+        .footer-section {
+            margin: 40px auto;
+            text-align: center;
+        }
+
+        .parents-button {
+            display: inline-block;
+            padding: 14px 35px;
+            background-color: #c99b82;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            font-family: 'Georgia', serif;
+            font-size: 1.1rem;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.06);
+            text-decoration: none;
+        }
+
+        .parents-button:hover {
+            background-color: #b3856d;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>PlayCrescer</h1>
+        <p>Histórias e descobertas para corações curiosos</p>
+    </header>
+
+    <div class="container">
+        <div class="card-wrapper">
+            <div class="card" onclick="alert('Abrindo o Modo Bebê com traço em aquarela...')">
+                <span class="icon">🐣</span>
+                <h2>0 a 2 Anos</h2>
+                <p>Estímulos suaves, formas orgânicas e canções de ninar clássicas em um ambiente calmo.</p>
+            </div>
+        </div>
+
+        <div class="card-wrapper">
+            <div class="card" onclick="alert('Abrindo o Modo Descoberta com brinquedos virtuais de madeira...')">
+                <span class="icon">🧸</span>
+                <h2>2 a 3 Anos</h2>
+                <p>Pequenas histórias do cotidiano e jogos de encaixar com textura de brinquedos de madeira.</p>
+            </div>
+        </div>
+
+        <div class="card-wrapper">
+            <div class="card" onclick="alert('Abrindo o Modo Explorador no estilo mapa antigo...')">
+                <span class="icon">🚀</span>
+                <h2>4 a 5 Anos</h2>
+                <p>Teatros de fantoche digitais, mistérios da natureza e introdução às letras e números.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-section">
+        <button class="parents-button" onclick="alert('Acessando o Painel de Controle dos Pais (Estilo Escritório Vintage)...')">
+            🔑 Área dos Pais
+        </button>
+    </div>
+
+</body>
+</html>
